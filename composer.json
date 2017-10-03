@@ -1,8 +1,11 @@
 {
-    "name": "massimo-filippi/composer-tools",
-    "type": "library",
-    "license": "MIT",
-    "minimum-stability": "dev",
-    "prefer-stable": true,
-    "require": {}
+  "name": "massimo-filippi/composer-tools",
+  "type": "library",
+  "license": "MIT",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {},
+  "bin": [
+    "bin/compile-translations"
+  ]
 }
