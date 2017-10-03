@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+echo "Start compiling .mo files"
+
+for folder in language/*
+do
+ if [ -d ${folder} ]
+ then
+   if [ ${folder} != "language/source" ]
+   then
+     for file in ${folder}/*.po
+     do
+       echo "Compiling file:" ${file}
+       msgfmt ${file} -o ${file/.po/.mo}
+     done
+   fi
+ fi
+done
+
+echo "Compiled."
