@@ -1,0 +1,8 @@
+{
+    "name": "massimo-filippi/composer-tools",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {}
+}
